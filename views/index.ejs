@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails 🍸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>It's Happy Hour ! </h1>
+        <form action="/submit" method="post">
+            <button type="submit">Hit me!</button>
+        </form>
+    </header>
+
+   
+
+    <section class="drink">
+        <img src=<%=image %> alt="chosen-drink">
+        <div class="detail">
+            <h2><%= name %></h2>
+            <p class="category"> <%= category %></p>
+        
+            <ul>
+                <% ingredients.forEach(ingredient => { %>
+                <li>
+                    <p class="ingredient"><%= ingredient.ingredient %> <span class="measure"> <%= ingredient.measure %> </span></p>
+                </li>
+                <%  }) %>
+            </ul>
+            <p><%= instruction %></p>
+        </div>
+    </section>
+      
+    
+    
+    
+</body>
+</html>

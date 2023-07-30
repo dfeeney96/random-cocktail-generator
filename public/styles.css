@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("/images/background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: #C65D7B;
+    color: #f6e6d8;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0 1px 10px #782a40 ;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+button {
+    background-color: #FF8474;
+    border: 0;
+    box-shadow: 0 0 10px #540b02;
+    border-radius: 30px;
+    color: #540b02;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    transition: ease-in-out 300ms;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ee9e93;
+    
+}
+
+.drink{
+    background-color: rgba(255, 255, 255, 0.612);
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #433535;
+    padding: 30px;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+img {
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    padding: 10px 0;
+}
+
+.detail {
+    padding-top: 20px;
+    text-align: center; 
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+}
+
+.category {
+    font-size: 12px;
+}
+
+ul {
+    list-style: none;
+    margin: 10px 0 30px;
+}
+
+.ingredient{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.measure{
+    font-weight: normal;
+}
+
+
+@media (min-width: 1000px) {
+
+    .drink {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    img {
+            border-radius: 30px;
+            width: 400px;
+            height: 400px;
+        }
+
+    .detail {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    
+}
